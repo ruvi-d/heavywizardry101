@@ -1,7 +1,8 @@
-    .global _start
-    .extern puts
-    .extern exit
-    .text
+.global _start
+.extern puts
+.extern exit
+
+.section .text
 _start:
     mov $msg, %rdi
     call puts
